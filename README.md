@@ -41,3 +41,9 @@ multi-page app for almost everything, and when you can't, use
 |multi-process|honcho||systemd, k8s|running multiple things inside one paas contaoiner
 |dependencies|pip||poetry, uv|uv looks promising, but so did poetry
 |deployments|docker + paas||k8s|just use a paas, such as fly.io
+
+## about
+
+i do django consulting,
+
+contact me at mikko at boringtechnology dot org
