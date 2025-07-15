@@ -14,7 +14,7 @@ this page has an approach for evaluating the boringness of technologies.
 
 bts is the boring technology score. you calculate bts by multiplying the following factors:
 
-* longevity (<5 years = 0, 5 years = 0.1, 6 years = 0.15, 10 years = 0.520 years = 1.0)
+* longevity (<5 years = 0, 5 years = 0.1, 6 years = 0.15, 10 years = 0.5, 20 years = 1.0)
 * accidental complexity (including dependencies) (0.1 = extremly high, 0.5 = medium, 0.9 = extremely low)
 * community (github stars)
 
