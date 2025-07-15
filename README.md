@@ -6,7 +6,7 @@ boring technology
 * has a future
 * avoids accidental complexity
 
-boring technology is a shark, not a dinosour.
+boring technology is [a shark, not a dinosour](https://www.simplethread.com/relational-databases-arent-dinosaurs-theyre-sharks/).
 
 this page has an approach for evaluating the boringness of technologies.
 
