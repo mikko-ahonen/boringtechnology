@@ -1,1 +1,44 @@
-# boringtechnology
+# boring technology
+
+boring technology 
+* has been around
+* just works
+* has a future
+
+boring technology is a shark, not a dinosour.
+
+this page has an approach for evaluating the boringness of technologies.
+
+## bts
+
+bts is the boring technology score. you calculate bts by multiplying the following factors:
+
+* longevity (<5 years = 0, 5 years = 0.1, 6 years = 0.15, 10 years = 0.520 years = 1.0)
+* accidental complexity (including dependencies) (0.1 = extremly high, 0.5 = medium, 0.9 = extremely low)
+* community (github stars)
+
+## extremely boring technology stack
+
+*extremely boring technology stack* is an opinionated technology stack that works
+surprisingly large number of use cases. accidental complexity is minimized by [just using
+postgres for everything](https://www.amazingcto.com/postgres-for-everything/), using 
+Django basic views for almost everything, and and avoiding db->model->JSON->JSON->HTML conversion
+by using HTMX/AlpineJS for the interactivity.
+
+| technology       | name           | bts | replaces          | comments                        |
+| ---------------- | -------------- | --- | ------------------| ----------------------------------- |
+| backend          | django         |     | fastapi, flask    |                                     |
+| frontend         | django         |     | REST + react/vue  | for most views                      |
+| frontend         | django         |     | REST + react/vue  | for admin  ui                       |
+| frontend         | htmx/alpinejs  |     | REST + react/vue  | for SPA uis                         |
+| database         | postgres       |     | sqlite, mysql     |                                     |
+| background tasks | django-tasks   |     | celery            | celery established, but complex     |
+| basic caching    | django         |     | redis             |                                     |
+| webscale caching | django-distill |     | redis             | combine with s3 buckets and cdn     |
+| full-text search | postgres       |     | elastic           |                                     |
+| queue            | postgres       |     | rabbitmq, kafka   | postgres queues have ACID           |
+| periodic running | superchronic   |     | cron              | cron that runs in container         |
+| multi-process    | honcho         |     | systemd, k8s      |                                     |
+| dependencies     | pip            |     | poetry, uv        | uv looks good, but so did poetry    |
+| deployments      | docker + paas  |     | k8s               |                                     |
+| ---------------- | -------------- | --- | --------------------------------------------------------|
