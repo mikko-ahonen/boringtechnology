@@ -23,8 +23,8 @@ bts is the boring technology score. you calculate bts by multiplying the followi
 *extremely boring technology stack* is an opinionated technology stack that works
 surprisingly large number of use cases. accidental complexity is minimized by [just using
 postgres for everything](https://www.amazingcto.com/postgres-for-everything/), using 
-Django basic views for almost everything, and and avoiding db->model->JSON->JSON->HTML conversion
-by using HTMX/AlpineJS for the interactivity.
+multi-page app for almost everything, and when you can't, use 
+[hypermedia-driven app](https://htmx.org/essays/hypermedia-driven-applications/) (HDA).
 
 | technology | name | bts| replaces | comments |
 | --- | --- | --- | --- | --- |
