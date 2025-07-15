@@ -3,7 +3,7 @@
 * has been around
 * just works
 * has a future
-* avoids accidental complexity
+* [makes simple easy](https://www.youtube.com/watch?v=SxdOUGdseq4) (avoids accidental complexity)
 
 boring technology is [a shark, not a dinosour](https://www.simplethread.com/relational-databases-arent-dinosaurs-theyre-sharks/).
 
@@ -14,8 +14,9 @@ this page has an approach for evaluating the boringness of technologies.
 bts is the boring technology score. you calculate bts by multiplying the following factors:
 
 * longevity (<5 years = 0, 5 years = 0.1, 6 years = 0.15, 10 years = 0.5, 20 years = 1.0)
-* accidental complexity (including dependencies) (0.1 = extremly high, 0.5 = medium, 0.9 = extremely low)
-* community (github stars)
+* accidental complexity (0.1 = extremly high - typically more than 10 deployed components, 0.5 = medium - typically more than 5 deployed components, 0.7 = low - typically more than 3 deployed components, 0.9 - very low - typically less than 3 deployed components)
+* works and has community (1 = &gt;50k, 0.5 &gt;10k, 0.2 &gt;1k, 0.1 &lt;1k github stars)
+* activity (1 = last merge within a week, 0.5 = last merge within a month, 0.1 = last merge within a year)
 
 ## extremely boring technology stack
 
