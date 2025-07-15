@@ -26,19 +26,18 @@ postgres for everything](https://www.amazingcto.com/postgres-for-everything/), u
 multi-page app for almost everything, and when you can't, use 
 [hypermedia-driven app](https://htmx.org/essays/hypermedia-driven-applications/) (HDA).
 
-| technology | name | bts| replaces | comments |
-| --- | --- | --- | --- | --- |
-| backend | django | | fastapi, flask | |
-| frontend | django | | REST + react/vue | for most views |
-| frontend | django | | REST + react/vue | for admin  ui
-| frontend | htmx/alpinejs | | REST + react/vue | for SPA uis
-| database | postgres | | sqlite, mysql |
-| background tasks | django-tasks | | celery | celery established, but too complex
-| caching | django | | redis |
-| caching | django-distill | | redis | for 'webscale' caching, use django-distill + s3 + cdn
-| full-text search | postgres | | elastic |
-| queue | postgres | | rabbitmq, kafka | postgres queues have ACID
-| periodic running | superchronic | | cron | cron that runs in container
-| multi-process | honcho | | systemd, k8s |
-| dependencies | pip | | poetry, uv | uv looks promising, but so did poetry
-| deployments | docker + paas | | k8s |
+|technology|name|bts|replaces|comments|
+|---|---|---|---|---|
+|backend|django||fastapi, flask||
+|frontend|django||REST + react/vue| for most views|
+|frontend|django||REST + react/vue|for admin  ui
+|frontend|htmx/alpinejs||REST + react/vue|for SPA uis
+|database|postgres||sqlite, mysql|while postgres is more complex than sqlite, it has features allowing you to avoid other components
+|background tasks| django-tasks|| celery| celery established, but it is too complex
+|caching|django||redis|use plain django caching for basic needs. for 'webscale' caching, use django-distill + s3 + cdn
+|full-text search|postgres||elastic|
+|queue|postgres||rabbitmq, kafka|postgres queues can be used to get ACID properties
+|periodic running|superchronic||cron|version for cron that runs in docker container
+|multi-process|honcho||systemd, k8s|running multiple things inside one paas contaoiner
+|dependencies|pip||poetry, uv|uv looks promising, but so did poetry
+|deployments|docker + paas||k8s|just use a paas, such as fly.io
