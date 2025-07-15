@@ -4,6 +4,7 @@ boring technology
 * has been around
 * just works
 * has a future
+* avoids accidental complexity
 
 boring technology is a shark, not a dinosour.
 
@@ -25,19 +26,19 @@ postgres for everything](https://www.amazingcto.com/postgres-for-everything/), u
 Django basic views for almost everything, and and avoiding db->model->JSON->JSON->HTML conversion
 by using HTMX/AlpineJS for the interactivity.
 
-technology | name | bts| replaces | comments
---- | --- | --- | --- | ---
-backend | django | | fastapi, flask |
-frontend | django | | REST + react/vue | for most views
-frontend | django | | REST + react/vue | for admin  ui
-frontend | htmx/alpinejs | | REST + react/vue | for SPA uis
-database | postgres | | sqlite, mysql |
-background tasks | django-tasks | | celery | celery established, but too complex
-caching | django | | redis |
-caching | django-distill | | redis | for 'webscale' caching, use django-distill + s3 + cdn
-full-text search | postgres | | elastic |
-queue | postgres | | rabbitmq, kafka | postgres queues have ACID
-periodic running | superchronic | | cron | cron that runs in container
-multi-process | honcho | | systemd, k8s |
-dependencies | pip | | poetry, uv | uv looks promising, but so did poetry
-deployments | docker + paas | | k8s |
+| technology | name | bts| replaces | comments
+| --- | --- | --- | --- | ---
+| backend | django | | fastapi, flask |
+| frontend | django | | REST + react/vue | for most views
+| frontend | django | | REST + react/vue | for admin  ui
+| frontend | htmx/alpinejs | | REST + react/vue | for SPA uis
+| database | postgres | | sqlite, mysql |
+| background tasks | django-tasks | | celery | celery established, but too complex
+| caching | django | | redis |
+| caching | django-distill | | redis | for 'webscale' caching, use django-distill + s3 + cdn
+| full-text search | postgres | | elastic |
+| queue | postgres | | rabbitmq, kafka | postgres queues have ACID
+| periodic running | superchronic | | cron | cron that runs in container
+| multi-process | honcho | | systemd, k8s |
+| dependencies | pip | | poetry, uv | uv looks promising, but so did poetry
+| deployments | docker + paas | | k8s |
