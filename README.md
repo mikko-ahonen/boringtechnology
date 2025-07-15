@@ -26,16 +26,16 @@ Django basic views for almost everything, and and avoiding db->model->JSON->JSON
 by using HTMX/AlpineJS for the interactivity.
 
 technology | name | bts| replaces | comments
---- | --- | --- | --- | --- |
-backend | django | | fastapi, flask
+--- | --- | --- | --- | ---
+backend | django | | fastapi, flask |
 frontend | django | | REST + react/vue | for most views
 frontend | django | | REST + react/vue | for admin  ui
 frontend | htmx/alpinejs | | REST + react/vue | for SPA uis
 database | postgres | | sqlite, mysql |
-background tasks | django-tasks | | celery | celery established, but complex
-basic caching | django | | redis | |
-webscale caching | django-distill | | redis | combine with s3 buckets and cdn
-full-text search | postgres | | elastic
+background tasks | django-tasks | | celery | celery established, but too complex
+caching | django | | redis |
+caching | django-distill | | redis | for 'webscale' caching, use django-distill + s3 + cdn
+full-text search | postgres | | elastic |
 queue | postgres | | rabbitmq, kafka | postgres queues have ACID
 periodic running | superchronic | | cron | cron that runs in container
 multi-process | honcho | | systemd, k8s |
