@@ -1,6 +1,5 @@
 # boring technology
 
-boring technology 
 * has been around
 * just works
 * has a future
