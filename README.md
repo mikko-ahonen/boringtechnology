@@ -20,18 +20,16 @@ bts is the boring technology score. you calculate bts by multiplying the followi
 
 ## extremely boring technology stack
 
-*extremely boring technology stack* is an opinionated technology stack that works
-surprisingly large number of use cases. accidental complexity is minimized by [just using
+*extremely boring technology stack* is an opinionated technology stack that works for a
+surprisingly large number of use cases. the accidental complexity is minimized by [just using
 postgres for everything](https://www.amazingcto.com/postgres-for-everything/), using 
-multi-page app for almost everything, and when you can't, use 
-[hypermedia-driven app](https://htmx.org/essays/hypermedia-driven-applications/) (HDA).
+multi-page app for almost everything, and when that fails, using
+[hypermedia-driven architecture](https://htmx.org/essays/hypermedia-driven-applications/).
 
 |technology|name|bts|replaces|comments|
 |---|---|---|---|---|
-|backend|django||fastapi, flask||
-|frontend|django||REST + react/vue| for most views|
-|frontend|django||REST + react/vue|for admin  ui
-|frontend|htmx/alpinejs||REST + react/vue|for SPA uis
+|backend|django||fastapi, flask|you will quickly outgrow the simplistic solutions, just use a basic django template|
+|frontend|django||REST + react/vue|use admin where possible, mpa for all user views, and htmx/alpine when that does not work|
 |database|postgres||sqlite, mysql|while postgres is more complex than sqlite, it has features allowing you to avoid other components
 |background tasks| django-tasks|| celery| celery established, but it is too complex
 |caching|django||redis|use plain django caching for basic needs. for 'webscale' caching, use django-distill + s3 + cdn
