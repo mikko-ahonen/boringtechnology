@@ -26,10 +26,10 @@ postgres for everything](https://www.amazingcto.com/postgres-for-everything/), u
 Django basic views for almost everything, and and avoiding db->model->JSON->JSON->HTML conversion
 by using HTMX/AlpineJS for the interactivity.
 
-| technology | name | bts| replaces | comments
-| --- | --- | --- | --- | ---
-| backend | django | | fastapi, flask |
-| frontend | django | | REST + react/vue | for most views
+| technology | name | bts| replaces | comments |
+| --- | --- | --- | --- | --- |
+| backend | django | | fastapi, flask | |
+| frontend | django | | REST + react/vue | for most views |
 | frontend | django | | REST + react/vue | for admin  ui
 | frontend | htmx/alpinejs | | REST + react/vue | for SPA uis
 | database | postgres | | sqlite, mysql |
